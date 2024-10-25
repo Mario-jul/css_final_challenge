@@ -13,6 +13,7 @@ header{
 aside{
     background-color: rgb(197, 169, 118);
     grid-area: aside;
+    font-size: large;
 }
 main{
     background-color: #f3f3f3;
@@ -77,8 +78,19 @@ main{
     transform: perspective(800px) rotateY(360deg);
 }
 footer{
-    background-color: blue;
+    background-color: rgb(46, 46, 103);
     grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.network{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    color: white;
+    scale: 1.4;
 }
 /* This space is for the movil size*/
 @media (max-width: 576px){
@@ -120,7 +132,10 @@ footer{
     }
     .company{
         display: flex;
+        justify-content: space-around;
         align-items: center;
+        padding-top: 40px;
+        scale: 1.2;
     }
     .sub-folders{
         display: none;
@@ -185,8 +200,12 @@ footer{
     .bar{
         display: none;
     }
+    .company_name{
+        font-size: x-large;
+    }
     .logo{
         animation: rotate 2s infinite;
+
     }
     @keyframes rotate {
        from{
@@ -201,7 +220,7 @@ footer{
         display: flex;
         flex-direction: column;
         justify-content: start;
-        align-items: center;
+        align-items: start;
         gap: 20px;
     }
 }
